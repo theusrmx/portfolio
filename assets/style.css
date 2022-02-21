@@ -1,0 +1,347 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.margin{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #000;
+}
+
+
+/*Home*/
+
+#home{
+    background-image: url('https://wallpapercave.com/wp/wp4676582.jpg');
+    background-position: center;
+}
+
+.home-div{
+    position: relative;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.home-div .text-box{
+    color: #fff;
+    width: max-content; 
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+
+    padding: 40px;
+
+    
+}
+
+.home-div .text-box h1{
+    font-size: 3em;
+    font-weight: 500;
+
+    text-align: center;
+
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid #df6909; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 85% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #df6909 }
+  }
+
+.text-span{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.home-div .text-box h2{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.home-div .text-box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.home-div span{
+    color: #df6909;
+    font-weight: 600;
+}
+
+.text-box ul{
+    width: 50%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon i{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #df6909;
+
+}
+
+.btn-cv{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    background-color: #df6909;
+    border-radius: 12px;
+    padding: 10px;
+
+    margin: 20px;
+
+    transition: 0.2s;
+}
+
+.btn-cv:hover{
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/*sobre*/
+
+#sobre{
+    color: #fff;
+    background-color: rgb(43, 43, 43);
+}
+
+
+
+.box-sobre{
+    background-color: #df6909;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-sobre ul{
+    list-style: none;
+}
+
+
+
+/*projetos*/
+
+.textbox-mobile{
+    background-color: none;  
+}
+
+#projetos{
+    background-image: url('https://images2.alphacoders.com/922/922574.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projetos{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.bloodcalc, .eft, .imersao-dev, .web-projects, .android-projects{
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+    font-weight: 300;
+
+    max-width: 100%;
+    max-height: 100%;
+    width: 340px;
+    height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bloodcalc h1{
+    color: #f1878c;
+    font-weight: 600;
+}
+
+.bloodcalc:hover{
+    border-radius: 50px;
+}
+
+
+.eft h1{
+    color: #008100;
+    font-weight: 600;
+}
+
+.eft:hover{
+    border-radius: 50px;
+}
+
+.imersao-dev h1{
+    color: #032080;
+    font-weight: 600;
+}
+
+.imersao-dev:hover{
+    border-radius: 50px;
+}
+
+.web-projects h1{
+    color: #b901e7;
+    font-weight: 600;
+}
+
+.web-projects:hover{
+    border-radius: 50px;
+}
+
+.android-projects h1{
+    color: #960126;
+    font-weight: 600;
+}
+
+.android-projects:hover{
+    border-radius: 50px;
+}
+
+
+.btn-more{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    background-color: #df6909;
+    border-radius: 12px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.btn-more:hover{
+    font-size: 20px;
+    border-radius: 40px;
+    color: #000;
+
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    font-size: 12px;
+}
+
+
+
+
+/*responsividade*/
+
+@media(max-width:991px){
+
+    section{
+        padding: 10px;
+    }
+
+    .margin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+
+    .home-div .text-box h1{
+        font-size: 1.5em;
+    }
+
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+  
+    .text-span{
+        font-size: 1em;
+    }
+
+    .projetos{
+        background: none;
+        backdrop-filter: none;
+    }
+
+    .textbox-mobile{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+}
+
+
+
