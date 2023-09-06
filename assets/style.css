@@ -195,7 +195,7 @@ section{
     border-radius: 12px;
 }
 
-.bloodcalc, .eft, .imersao-dev, .web-projects, .android-projects{
+.bloodcalc, .eft, .imersao-dev, .web-projects, .android-projects, .search-engine{
     background-color: #fff;
     color: #000;
     border-radius: 12px;
@@ -219,9 +219,6 @@ section{
     font-weight: 600;
 }
 
-.bloodcalc:hover{
-    border-radius: 50px;
-}
 
 
 .eft h1{
@@ -229,34 +226,21 @@ section{
     font-weight: 600;
 }
 
-.eft:hover{
-    border-radius: 50px;
-}
+
 
 .imersao-dev h1{
     color: #032080;
     font-weight: 600;
 }
 
-.imersao-dev:hover{
-    border-radius: 50px;
-}
 
-.web-projects h1{
-    color: #b901e7;
+
+.search-engine h1{
+    color: #d83333;
     font-weight: 600;
 }
 
-.web-projects:hover{
-    border-radius: 50px;
-}
-
-.android-projects h1{
-    color: #960126;
-    font-weight: 600;
-}
-
-.android-projects:hover{
+.bloodcalc:hover, .eft:hover, .imersao-dev:hover, .search-engine:hover{
     border-radius: 50px;
 }
 
